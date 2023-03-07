@@ -40,6 +40,7 @@ html {
     align-items: center;
     width: 100%;
     border: 1px solid red;
+    margin-bottom: 20px;
 }
 
 
@@ -68,7 +69,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2196F3;
+    background-color: #14293b;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -80,13 +81,13 @@ html {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(253, 255, 206);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #1b4536;
   }
   
   input:focus + .slider {
@@ -112,29 +113,35 @@ html {
 
 /* MAIN ---------------------------------------------- */
 
+/* CONTAINER ----------------------------------------- */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 /* GRID ---------------------------------------------- */
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 2px;
+    background-color: #16697A;
 }
 
 .grid-block {
-    height: 100px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    height: 90px;
+    width: 90px;
     background-color: rgba(0, 0, 0, .5);
 }
 
-.border-botton {
-    border-bottom: 5px solid #B1EDE8;
+.grid-block:hover {
+  background-color: rgba(0, 0, 0, .25);
 }
-
-.border-right {
-    border-right: 5px solid #B1EDE8;
-}
-
-.border-b
 
 .footer {
     background-color: #FFFCF9;
